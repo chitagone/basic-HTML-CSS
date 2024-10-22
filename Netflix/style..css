@@ -1,0 +1,217 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+.header {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/background2.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding: 10px 8%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.logo {
+    width: 150px;
+    cursor: pointer;
+}
+
+nav button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #db0001;
+    padding: 7px 20px;
+    font-size: 12px;
+    color: #fff;
+    margin-left: 10px;
+    border-radius: 4px;
+}
+
+.language-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 7px;
+    background: transparent;
+    border: 1px solid #fff;
+    transition: 0.5s;
+}
+
+.language-btn img {
+    width: 10px;
+    margin-left: 10px;
+}
+
+.language-btn:hover {
+    background-color: #db0001;
+    border: 1px solid #db0001;
+}
+
+.header-content {
+    position: absolute;
+    padding-top: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 600;
+    max-width: 650px;
+}
+
+.header-content h3 {
+    margin-bottom: 20px;
+    font-weight: 400px;
+}
+
+.email-sign-up {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 4px;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.email-sign-up input {
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+}
+
+.email-sign-up button {
+    background-color: #db0001;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 17px;
+    padding: 13px 30px;
+}
+
+
+/*--------------- Fearture-----------------*/
+
+.features {
+    padding: 50px 12%;
+    font-size: 22px;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+
+.text-col {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.img-col {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.img-col img {
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+.features h2 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+
+/*.....................Frequently.......................*/
+
+.fap {
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.fap h2 {
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.according {
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+
+.according li {
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.according li label {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    background: #303030;
+    margin-bottom: 3px;
+    cursor: pointer;
+    position: relative;
+}
+
+label::after {
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.accroding .content {
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5, padding 0.5s;
+}
+
+.accroding input[type="radio"]:checked+label+.content {
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.accroding input[type="radio"]:checked+label::after {
+    transform: rotate(135deg);
+}
